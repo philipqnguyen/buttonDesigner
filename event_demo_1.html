@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 6: Events - Event Attributes</title>
+    <link rel="stylesheet" href="css/c06.css" />
+  </head>
+  <body>
+    <div id="page">
+      <h1>List King</h1>
+      <h2>New Account</h2>
+      <form method="post" action="http://www.example.org/register">
+
+        <label for="username">Create a username: </label>
+        <input type="text" id="username" />
+        <div id="feedback"></div>
+
+        <label for="password">Create a password: </label>
+        <input type="password" id="password" />
+
+        <input type="submit" value="sign up!" />
+
+      </form>
+    </div>
+    <script>
+      function checkUsername() {
+        var elUsername = document.getElementById('username');
+        var elMsg = document.getElementById('feedback');
+
+        if (elUsername.value.length < 5) {
+          elMsg.textContent = "Username must be 4 chars or more";
+        }
+        else {
+          elMsg.textContent = "";
+        }
+      }
+
+      var elUsername = document.getElementById('username');
+
+      // This is event handler
+      //elUsername.onblur = checkUsername; // DO NOT USE ENDING PARENTHESIS, else the function will return null. We don't want a return value! We only want DOM changes.
+
+      // this is event listening. You can trigger multiple functions. This is preferred method!
+      elUsername.addEventListener('blur', checkUsername, false);
+      elUsername.addEventListener('keyup', checkUsername, false);
+    </script>
+  </body>
+</html>
