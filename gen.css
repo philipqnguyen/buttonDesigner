@@ -1,0 +1,16 @@
+.square-edges {
+  padding:10px;
+}
+
+.round-edges {
+  border-radius: 20%;
+  padding:10px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}

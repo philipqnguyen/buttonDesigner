@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="gen.css">
+  </head>
+  <body>
+    <section id="gen">
+      <h1>Button Generator</h1>
+      <form>
+        <fieldset>
+          <label>
+            Button text:
+            <input id="button-text" name="button-text" type="text" value="Enter text" placeholder="Type your text here!">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label>
+            Round edges
+            <input id="round-edges" type="radio" class="button-style" name="button-style" value="round-edges">
+          </label>
+          <label>
+            Square edges
+            <input id="square-edges" type="radio" class="button-style" name="button-style" value="square-edges">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label>
+            Red
+            <input id="red-design" name="button-color" type="radio" value="red">
+          </label>
+          <label>
+            Blue
+            <input id="blue-design" name="button-color" type="radio" value="blue">
+          </label>
+        </fieldset>
+        <a id="preview" href="#">Preview</a>
+      </form>
+      <div id="output-visual"></div>
+      <output id="output-html" ></output>
+      <output id="output-css" ></output>
+    </section>
+    <script src="gen.js"></script>
+  </body>
+</html>
