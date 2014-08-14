@@ -1,4 +1,4 @@
-var buttonText = document.getElementById('button-text').value;
+
 
 var squareEdges = document.getElementById('square-edges');
 
@@ -36,6 +36,7 @@ var color = function () {
 
 
 var preview = function() {
+  var buttonText = document.getElementById('button-text').value;
 
   outputVisual.className = color() + " " + style();
   outputVisual.innerHTML = "<p>" + buttonText + "</p>";
