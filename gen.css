@@ -1,4 +1,4 @@
-.default-button {
+.standard {
   border-radius: 4px;
   background: #ccc;
   color: #fff;
@@ -18,32 +18,42 @@
   text-align: center;
   display: inline-block;
   padding: 0 3em;
-
 }
 
-.increase-size {
+.increase-length {
   background: #ccc;
+  border-radius: 4px;
   box-shadow: 10px 10px 5px #888888;
   color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 150%;
   width: 15%;
   text-align: center;
   display: inline-block;
   padding: 0 4em;
 }
 
-/* Next three button styles are undetermined. */
-.buttonstyle3 {
-
+.large-button {
+  background: #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 10px 10px 5px #888888;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 120%;
+  max-height: 100px;
+  padding: 0 3em;
+  text-decoration: none;
 }
 
-.buttonstyle4 {
-
-}
-
-.buttonstyle5 {
-
+.underline {
+  border-radius: 4px;
+  background: #ccc;
+  display: inline-block;
+  box-shadow: 10px 10px 5px #888888;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 0 3em;
+  text-decoration: underline;
 }
 
 .red {
