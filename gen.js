@@ -87,6 +87,17 @@ for (i = 0; i < color_arr.length; i++) {
 }
 
 
+var standardCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ncolor: #fff; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: none; \n}";
+
+var roundEdgeCSS = ".yourClassName { \nborder-radius: 25px; \nbackground: #ccc; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 3em; \n}";
+
+var increaseLengthCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nwidth: 15%; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 4em; \n}";
+
+var largeButtonCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nfont-size: 120%; \npadding: 0 3em; \ntext-decoration: none; \n}";
+
+var underlineCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: underline; \n}";
+
+
 
 
 
