@@ -13,12 +13,30 @@ var greenDesign = document.getElementById('green-design');
 var blueDesign = document.getElementById('blue-design');
 
 var outputVisual = document.getElementById('output-visual');
+var outputHTMLCode = document.getElementById('output-html');
+var outputCSSCode = document.getElementById('output-css');
 
 var previewButton = document.getElementById('preview');
 
 var style_arr = [style1, style2, style3, style4, style5];
 
 var color_arr = [redDesign, orangeDesign, yellowDesign, greenDesign, blueDesign];
+
+var styleCSSKey = {
+  style1:
+  style2:
+  style3:
+  style4:
+  style5:
+}
+
+var colorCSSKey = {
+  redDesign:
+  orangeDesign:
+  yellowDesign:
+  greenDesign:
+  blueDesign:
+}
 
 // Loops through the styles to find the style that was selected
 var style = function () {
@@ -38,10 +56,21 @@ var color = function () {
   }
 }
 
+// returns proper button style css code
+var styleCSS = function (styleKey) {
+  return styleCSSKey.styleKey;
+}
+
+// returns selected button color css code
+var colorCSS = function (colorKey) {
+  return colorCSSKey.colorKey;
+}
+
 // Outputs the text and selected color and style into the HTML
 var preview = function() {
   outputVisual.className = color() + " " + style();
   outputVisual.innerHTML = "<p>" + buttonText.value + "</p>";
+  outputCSSCode.textContent = styleCSS(style()) + "\n\n" + colorCSS(color());
 }
 
 // listens for events on text input
@@ -56,3 +85,11 @@ for (i = 0; i < style_arr.length; i++) {
 for (i = 0; i < color_arr.length; i++) {
   color_arr[i].addEventListener('click', preview, false);
 }
+
+
+
+
+
+
+
+
