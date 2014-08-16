@@ -18,89 +18,99 @@ var outputCSSCode = document.getElementById('output-css');
 
 var previewButton = document.getElementById('preview');
 
-var style_arr = [style1, style2, style3, style4, style5];
+var styleArr = [style1, style2, style3, style4, style5];
+var colorArr = [redDesign, orangeDesign, yellowDesign, greenDesign, blueDesign];
 
-var color_arr = [redDesign, orangeDesign, yellowDesign, greenDesign, blueDesign];
+var styleArrString = ['style1', 'style2', 'style3', 'style4', 'style5']
+var colorArrString = ['redDesign', 'orangeDesign', 'yellowDesign', 'greenDesign', 'blueDesign']
+
+var standardCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ncolor: #fff; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: none; \n";
+var roundEdgeCSS = ".yourClassName { \nborder-radius: 25px; \nbackground: #ccc; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 3em; \n";
+var increaseLengthCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nwidth: 15%; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 4em; \n";
+var largeButtonCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nfont-size: 120%; \npadding: 0 3em; \ntext-decoration: none; \n";
+var underlineCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: underline; \n";
+
+var redButton = "background-color: red;\n}";
+var orangeButton = "background-color: orange;\n}";
+var yellowButton = "background-color: yellow;\ntext-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n}";
+var greenButton = "background-color: green;\n}";
+var blueButton = "background-color: blue;\n}";
 
 var styleCSSKey = {
-  style1:
-  style2:
-  style3:
-  style4:
-  style5:
+  "style1": standardCSS,
+  "style2": roundEdgeCSS,
+  "style3": increaseLengthCSS,
+  "style4": largeButtonCSS,
+  "style5": underlineCSS
 }
 
 var colorCSSKey = {
-  redDesign:
-  orangeDesign:
-  yellowDesign:
-  greenDesign:
-  blueDesign:
+  "redDesign": redButton,
+  "orangeDesign": orangeButton,
+  "yellowDesign": yellowButton,
+  "greenDesign": greenButton,
+  "blueDesign": blueButton
 }
 
 // Loops through the styles to find the style that was selected
 var style = function () {
-  for (i = 0; i < style_arr.length; i++) {
-    if (style_arr[i].checked) {
-      return style_arr[i].value;
+  for (i = 0; i < styleArr.length; i++) {
+    if (styleArr[i].checked) {
+      return styleArr[i].value;
     }
   }
 }
 
 // Loops through the colors to find the color that was selected
 var color = function () {
-  for (i = 0; i < color_arr.length; i++) {
-    if (color_arr[i].checked) {
-      return color_arr[i].value;
+  for (i = 0; i < colorArr.length; i++) {
+    if (colorArr[i].checked) {
+      return colorArr[i].value;
     }
   }
 }
 
 // returns proper button style css code
-var styleCSS = function (styleKey) {
-  return styleCSSKey.styleKey;
+var styleCSS = function () {
+  for (i = 0; i < styleArr.length; i++) {
+    if (styleArr[i].checked) {
+      return styleCSSKey[styleArrString[i]];
+    }
+  }
 }
 
 // returns selected button color css code
-var colorCSS = function (colorKey) {
-  return colorCSSKey.colorKey;
+var colorCSS = function () {
+  for (i = 0; i < colorArr.length; i++) {
+    if (colorArr[i].checked) {
+      return colorCSSKey[colorArrString[i]];
+    }
+  }
 }
 
 // Outputs the text and selected color and style into the HTML
 var preview = function() {
   outputVisual.className = color() + " " + style();
   outputVisual.innerHTML = "<p>" + buttonText.value + "</p>";
-  outputCSSCode.textContent = styleCSS(style()) + "\n\n" + colorCSS(color());
+  outputCSSCode.textContent = styleCSS() + colorCSS();
 }
 
-// listens for events on text input
-buttonText.addEventListener('keyup', preview, false);
-
-// listens for events on styles
-for (i = 0; i < style_arr.length; i++) {
-  style_arr[i].addEventListener('click', preview, false);
+var loadPreview = function() {
+  // Previews default button on document load
+  preview();
+  // listens for events on text input
+  buttonText.addEventListener('keyup', preview, false);
+  // listens for events on styles
+  for (i = 0; i < styleArr.length; i++) {
+    styleArr[i].addEventListener('click', preview, false);
+  }
+  // listens for events on colors.
+  for (i = 0; i < colorArr.length; i++) {
+    colorArr[i].addEventListener('click', preview, false);
+  }
 }
 
-// listens for events on colors.
-for (i = 0; i < color_arr.length; i++) {
-  color_arr[i].addEventListener('click', preview, false);
+// load the preview and start listening only when the final element in the generator section loads.
+if (!!outputVisual) {
+  loadPreview();
 }
-
-
-var standardCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ncolor: #fff; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: none; \n}";
-
-var roundEdgeCSS = ".yourClassName { \nborder-radius: 25px; \nbackground: #ccc; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 3em; \n}";
-
-var increaseLengthCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nwidth: 15%; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 4em; \n}";
-
-var largeButtonCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nfont-size: 120%; \npadding: 0 3em; \ntext-decoration: none; \n}";
-
-var underlineCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: underline; \n}";
-
-
-
-
-
-
-
-
