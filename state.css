@@ -1,0 +1,79 @@
+.is-standard-button {
+  border-radius: 4px;
+  background: #ccc;
+  color: #fff;
+  display: inline-block;
+  box-shadow: 10px 10px 5px #888888;
+  font-family: Arial, sans-serif;
+  padding: 0 3em;
+  text-decoration: none;
+}
+
+.is-round-edges-button {
+  border-radius: 25px;
+  background: #ccc;
+  box-shadow: 10px 10px 5px #888888;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: inline-block;
+  padding: 0 3em;
+}
+
+.is-increase-length-button {
+  background: #ccc;
+  border-radius: 4px;
+  box-shadow: 10px 10px 5px #888888;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  width: 15%;
+  text-align: center;
+  display: inline-block;
+  padding: 0 4em;
+}
+
+.is-large-button {
+  background: #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 10px 10px 5px #888888;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 120%;
+  padding: 0 3em;
+  text-decoration: none;
+}
+
+.is-underline-button {
+  border-radius: 4px;
+  background: #ccc;
+  display: inline-block;
+  box-shadow: 10px 10px 5px #888888;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 0 3em;
+  text-decoration: underline;
+}
+
+.is-red {
+  background-color: red;
+}
+
+.is-orange {
+  background-color: orange;
+}
+
+.is-yellow {
+  background-color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.is-green {
+  background-color: green;
+}
+
+.is-blue {
+  background-color: blue;
+}
+
+
