@@ -1,109 +1,107 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="content-type" content="text/html" charset="utf-8">
-  <title>About Buttoneers</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="module.css">
-  <link rel="stylesheet" type="text/css" href="about.css">
-  <link rel="stylesheet" type="text/css" href="state.css">
-</head>
-<body class="body-about">
-  <header id="main-header">
-    <div id="logo"></div>
-    <ul>
-      <li><a href="about.html" title="About Buttoneers" target="_self">About</a></li>
-      <li> <a href="generator.html" title="Get your button now" target="_self">Generator</a></li>
-      <li><a href="index.html" title="About Buttoneers" target="_self">Home</a></li>
-      <li><a href="http://www.codefellows.org/" target="_blank" title="Learn how to code today"><img id="code-fellows-pic" src="images/logo1.png"></a></li>
-    </ul>
-  </header>
-  <div class="green-style"></div>
-  <div id="main-container">
-    <section id="gen">
-      <h1>Button Generator</h1>
-      <form>
-        <fieldset>
-          <label>
-            Button text:
-            <input id="button-text" name="button-text" type="text" value="Enter text" placeholder="Type your text here!">
-          </label>
-        </fieldset>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>About Buttoneers</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="module-about-gen.css">
+    <link rel="stylesheet" type="text/css" href="state.css">
+  </head>
+  <body class="body-about">
+    <header id="main-header">
+      <div id="logo"></div>
+      <ul>
+        <li><a href="about.html" title="About Buttoneers" target="_self">About</a></li>
+        <li> <a href="generator.html" title="Get your button now" target="_self">Generator</a></li>
+        <li><a href="index.html" title="About Buttoneers" target="_self">Home</a></li>
+        <li><a href="http://www.codefellows.org/" target="_blank" title="Learn how to code today"><img id="code-fellows-pic" src="images/logo1.png"></a></li>
+      </ul>
+    </header>
+    <div class="green-style"></div>
+    <div id="main-container">
+      <section id="gen">
+        <h1>Button Generator</h1>
+        <form>
+          <fieldset>
+            <label>
+              Button text:
+              <input id="button-text" name="button-text" type="text" value="Enter text" placeholder="Type your text here!">
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <label>
-            Standard
-            <input id="buttonstyle1" type="radio" name="button-style" value="is-standard-button" checked>
-          </label>
-          <label>
-            Round Edges
-            <input id="buttonstyle2" type="radio" name="button-style" value="is-round-edges-button">
-          </label>
-          <label>
-            Increased Length
-            <input id="buttonstyle3" type="radio" name="button-style" value="is-increase-length-button">
-          </label>
-          <label>
-            Large Button
-            <input id="buttonstyle4" type="radio" name="button-style" value="is-large-button">
-          </label>
-          <label>
-            Underlined
-            <input id="buttonstyle5" type="radio" name="button-style" value="is-underline-button">
-          </label>
-        </fieldset>
+          <fieldset>
+            <label>
+              Standard
+              <input id="buttonstyle1" type="radio" name="button-style" value="is-standard-button" checked>
+            </label>
+            <label>
+              Round Edges
+              <input id="buttonstyle2" type="radio" name="button-style" value="is-round-edges-button">
+            </label>
+            <label>
+              Increased Length
+              <input id="buttonstyle3" type="radio" name="button-style" value="is-increase-length-button">
+            </label>
+            <label>
+              Large Button
+              <input id="buttonstyle4" type="radio" name="button-style" value="is-large-button">
+            </label>
+            <label>
+              Underlined
+              <input id="buttonstyle5" type="radio" name="button-style" value="is-underline-button">
+            </label>
+          </fieldset>
 
-        <fieldset>
+          <fieldset>
+            <label>
+              Red
+              <input id="red-design" name="button-color" type="radio" value="is-red" checked>
+            </label>
+            <label>
+              Orange
+              <input id="orange-design" name="button-color" type="radio" value="is-orange">
+            </label>
+            <label>
+              Yellow
+              <input id="yellow-design" name="button-color" type="radio" value="is-yellow">
+            </label>
+            <label>
+              Green
+              <input id="green-design" name="button-color" type="radio" value="is-green">
+            </label>
+            <label>
+              Blue
+              <input id="blue-design" name="button-color" type="radio" value="is-blue">
+            </label>
+          </fieldset>
+        </form>
+        <div id="final-output">
+          <div id="output-visual"></div>
+        </div>
+        <div id="textarea-container">
+          <h2 id="html-code">HTML Code</h2>
+          <h2 id="css-code">CSS Code</h2>
+        </div>
+        <div id="label-container">
           <label>
-            Red
-            <input id="red-design" name="button-color" type="radio" value="is-red" checked>
+            <textarea id="output-html" cols="40" rows="20"></textarea>
           </label>
           <label>
-            Orange
-            <input id="orange-design" name="button-color" type="radio" value="is-orange">
+            <textarea id="output-css" cols="40" rows="20"></textarea>
           </label>
-          <label>
-            Yellow
-            <input id="yellow-design" name="button-color" type="radio" value="is-yellow">
-          </label>
-          <label>
-            Green
-            <input id="green-design" name="button-color" type="radio" value="is-green">
-          </label>
-          <label>
-            Blue
-            <input id="blue-design" name="button-color" type="radio" value="is-blue">
-          </label>
-        </fieldset>
-      </form>
-      <div id="final-output">
-      <div id="output-visual"></div>
-      </div>
-      <div id="textarea-container">
-        <h2 id="html-code">HTML Code</h2>
-        <h2 id="css-code">CSS Code</h2>
-      </div>
-      <div id="label-container">
-      <label>
-        <textarea id="output-html" cols="40" rows="20"></textarea>
-      </label>
-      <label>
-        <textarea id="output-css" cols="40" rows="20"></textarea>
-      </label>
-      </div>
-    </section>
-  </div>
-  <footer>
-    <p class="copyrights">&copy;2014 All rights reserved. Site created by:
-      <a class="blue-links" href="https://github.com/DonQuality" title="Github profile" target="blank">DonQuality&nbsp;|</a>
-      <a class="blue-links" href="https://github.com/ffmegaman" title="Github Profile" target="blank">ffmegaman&nbsp;|</a>
-      <a class="blue-links" href="https://github.com/ktrottier" title="Github Profile" target="blank">ktrottier</a>
-    </p>
-  </footer>
-  <script type="text/javascript" src="gen.js"></script>
-</body>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p class="copyrights">&copy;2014 All rights reserved. Site created by:
+        <a class="blue-links" href="https://github.com/DonQuality" title="Github profile" target="blank">DonQuality&nbsp;|</a>
+        <a class="blue-links" href="https://github.com/ffmegaman" title="Github Profile" target="blank">ffmegaman&nbsp;|</a>
+        <a class="blue-links" href="https://github.com/ktrottier" title="Github Profile" target="blank">ktrottier</a>
+      </p>
+    </footer>
+    <script type="text/javascript" src="gen.js"></script>
+  </body>
 </html>
-      <div id="output-visual"></div>
 
 
 

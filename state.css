@@ -55,6 +55,8 @@
   text-decoration: underline;
 }
 
+/* MAIN, Front page call to action -------------------------- */
+
 .is-red {
   background-color: red;
 }
@@ -76,4 +78,32 @@
   background-color: blue;
 }
 
+a:link {
+  text-decoration: none;
+  color:  #D74B4B;
+}
+a:visited {
+  text-decoration: none;
+  color:  #D74B4B;
+}
+a:hover {
+  text-decoration: none;
+  color:  #D74B4B;
+}
+a:active {
+  text-decoration: none;
+  color:  #D74B4B;
+}
 
+li:hover{
+  font-size: 31px;
+  color: #008B8B;
+  box-shadow: white;
+}
+input:hover{
+  box-shadow: 0px 0px 18px blue;
+}
+button:hover{
+ border-color: blue;
+ cursor: pointer;
+}
