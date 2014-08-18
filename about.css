@@ -1,22 +1,7 @@
 .body-about{
   background:url(images/bg1.jpg);
-}
-
-a:link {
-  text-decoration: none;
-  color:  #D74B4B;
-}
-a:visited {
-  text-decoration: none;
-  color:  #D74B4B;
-}
-a:hover {
-  text-decoration: none;
-  color:  #D74B4B;
-}
-a:active {
-  text-decoration: none;
-  color:  #D74B4B;
+  background-attachment: fixed;
+  width: 100%;
 }
 
 #main-header{
@@ -43,7 +28,7 @@ a:active {
   width: 40%;
 }
 
-ul > li {
+ul > li{
   display: inline-block;
   font-size: 30px;
   margin: 10px;
@@ -66,7 +51,7 @@ li:hover{
 
 #main-container{
   width: 1020px;
-  height: 1150px;
+  height: 1000px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -85,10 +70,6 @@ li:hover{
   text-align: left;
   display: block;
 }
-
-/*#Emmanuel-info:hover{
-  box-shadow: 0px 0px 15px #00FFFF;
-}*/
 
 #about-Kevin{
   width: 300px;
@@ -156,14 +137,6 @@ article > p{
   display: block;
   margin: 0 auto;
   box-shadow: 0px 0px 40px blue;
-}
-
-footer{
-  width: 100%;
-  height: 50px;
-  background-color: #5F9EA0;
-  bottom: 0;
-  left: 0;
 }
 
 #joinus-pic{
@@ -410,4 +383,12 @@ textarea{
 article > p{
   font-size: 16px;
   text-align: left;
+}
+
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: #5F9EA0;
+  bottom: 0;
+  left: 0;
 }
