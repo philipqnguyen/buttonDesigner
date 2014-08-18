@@ -5,7 +5,7 @@
   display: inline-block;
   box-shadow: 10px 10px 5px #888888;
   font-family: Arial, sans-serif;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
   text-decoration: none;
 }
 
@@ -17,7 +17,7 @@
   font-family: Arial, sans-serif;
   text-align: center;
   display: inline-block;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
 }
 
 .is-increase-length-button {
@@ -29,7 +29,7 @@
   width: 15%;
   text-align: center;
   display: inline-block;
-  padding: 0 4em;
+  padding: 1em 2em 1em 2em;
 }
 
 .is-large-button {
@@ -40,7 +40,7 @@
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 120%;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
   text-decoration: none;
 }
 
@@ -51,7 +51,7 @@
   box-shadow: 10px 10px 5px #888888;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
   text-decoration: underline;
 }
 

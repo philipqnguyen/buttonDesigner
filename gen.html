@@ -9,12 +9,11 @@
       <form>
         <fieldset>
           <label>
-            Button text:
-            <input id="button-text" name="button-text" type="text" value="Enter text" placeholder="Type your text here!">
+            <input id="button-text" type="text" placeholder="Type your text here!">
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="style-set">
           <label>
             Standard
             <input id="buttonstyle1" type="radio" name="button-style" value="is-standard-button" checked>
@@ -37,7 +36,7 @@
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="color-set">
           <label>
             Red
             <input id="red-design" name="button-color" type="radio" value="is-red" checked>
@@ -60,16 +59,21 @@
           </label>
         </fieldset>
       </form>
-      <div id="output-visual"></div>
-      <label>
-        HTML Code
-        <textarea id="output-html" cols="40" rows="20"></textarea>
-      </label>
-      <label>
-        CSS Code
-        <textarea id="output-css" cols="40" rows="20"></textarea>
-      </label>
     </section>
+  <div id="html-code">
+    <label id="html-code">
+      HTML Code
+      <textarea id="output-html" cols="40" rows="20"></textarea>
+    </label>
+  </div>
+
+
+    <div id="output-visual"></div>
     <script src="gen.js"></script>
   </body>
 </html>
+
+<!--    <label id="css-code">
+      CSS Code
+      <textarea id="output-css" cols="40" rows="20"></textarea>
+    </label> -->

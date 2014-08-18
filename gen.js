@@ -24,11 +24,11 @@ var colorArr = [redDesign, orangeDesign, yellowDesign, greenDesign, blueDesign];
 var styleArrString = ['style1', 'style2', 'style3', 'style4', 'style5']
 var colorArrString = ['redDesign', 'orangeDesign', 'yellowDesign', 'greenDesign', 'blueDesign']
 
-var standardCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ncolor: #fff; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: none; \n";
-var roundEdgeCSS = ".yourClassName { \nborder-radius: 25px; \nbackground: #ccc; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 3em; \n";
-var increaseLengthCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nwidth: 15%; \ntext-align: center; \ndisplay: inline-block; \npadding: 0 4em; \n";
-var largeButtonCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nfont-size: 120%; \npadding: 0 3em; \ntext-decoration: none; \n";
-var underlineCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \npadding: 0 3em; \ntext-decoration: underline; \n";
+var standardCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ncolor: #fff; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \nfont-family: Arial, sans-serif; \npadding: 1em 2em 1em 2em; \ntext-decoration: none; \n";
+var roundEdgeCSS = ".yourClassName { \nborder-radius: 25px; \nbackground: #ccc; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \ntext-align: center; \ndisplay: inline-block; \npadding: 1em 2em 1em 2em; \n";
+var increaseLengthCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nwidth: 15%; \ntext-align: center; \ndisplay: inline-block; \npadding: 1em 2em 1em 2em;\n";
+var largeButtonCSS = ".yourClassName { \nbackground: #ccc; \nborder-radius: 4px; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \nfont-size: 120%; \npadding: 1em 2em 1em 2em; \ntext-decoration: none; \n";
+var underlineCSS = ".yourClassName { \nborder-radius: 4px; \nbackground: #ccc; \ndisplay: inline-block; \nbox-shadow: 10px 10px 5px #888888; \ncolor: #fff; \nfont-family: Arial, sans-serif; \npadding: 1em 2em 1em 2em; \ntext-decoration: underline; \n";
 
 var redButton = "background-color: red;\n}";
 var orangeButton = "background-color: orange;\n}";
