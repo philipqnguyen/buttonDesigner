@@ -92,7 +92,7 @@ var colorCSS = function () {
 var preview = function() {
   outputVisual.className = color() + " " + style();
   outputVisual.innerHTML = "<p>" + buttonText.value + "</p>";
-  outputHTMLCode.textContent = "<a class='yourClassName' href='#'>" + buttonText.value + "</a>"
+  outputHTMLCode.textContent = "<p class='yourClassName'>" + buttonText.value + "</p>"
   outputCSSCode.textContent = styleCSS() + colorCSS();
 }
 
