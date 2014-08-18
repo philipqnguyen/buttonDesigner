@@ -1,15 +1,15 @@
-.standard {
+.is-standard-button {
   border-radius: 4px;
   background: #ccc;
   color: #fff;
   display: inline-block;
   box-shadow: 10px 10px 5px #888888;
   font-family: Arial, sans-serif;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
   text-decoration: none;
 }
 
-.round-edges {
+.is-round-edges-button {
   border-radius: 25px;
   background: #ccc;
   box-shadow: 10px 10px 5px #888888;
@@ -17,10 +17,10 @@
   font-family: Arial, sans-serif;
   text-align: center;
   display: inline-block;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
 }
 
-.increase-length {
+.is-increase-length-button {
   background: #ccc;
   border-radius: 4px;
   box-shadow: 10px 10px 5px #888888;
@@ -29,10 +29,10 @@
   width: 15%;
   text-align: center;
   display: inline-block;
-  padding: 0 4em;
+  padding: 1em 2em 1em 2em;
 }
 
-.large-button {
+.is-large-button {
   background: #ccc;
   border-radius: 4px;
   display: inline-block;
@@ -40,39 +40,39 @@
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 120%;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
   text-decoration: none;
 }
 
-.underline {
+.is-underline-button {
   border-radius: 4px;
   background: #ccc;
   display: inline-block;
   box-shadow: 10px 10px 5px #888888;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 0 3em;
+  padding: 1em 2em 1em 2em;
   text-decoration: underline;
 }
 
-.red {
+.is-red {
   background-color: red;
 }
 
-.orange {
+.is-orange {
   background-color: orange;
 }
 
-.yellow {
+.is-yellow {
   background-color: yellow;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.green {
+.is-green {
   background-color: green;
 }
 
-.blue {
+.is-blue {
   background-color: blue;
 }
 

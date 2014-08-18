@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="gen.css">
+    <link rel="stylesheet" type="text/css" href="state.css">
   </head>
   <body>
     <section id="gen">
@@ -9,38 +9,71 @@
       <form>
         <fieldset>
           <label>
-            Button text:
-            <input id="button-text" name="button-text" type="text" value="Enter text" placeholder="Type your text here!">
+            <input id="button-text" type="text" placeholder="Type your text here!">
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="style-set">
           <label>
-            Round edges
-            <input id="round-edges" type="radio" class="button-style" name="button-style" value="round-edges">
+            Standard
+            <input id="buttonstyle1" type="radio" name="button-style" value="is-standard-button" checked>
           </label>
           <label>
-            Square edges
-            <input id="square-edges" type="radio" class="button-style" name="button-style" value="square-edges">
+            Round Edges
+            <input id="buttonstyle2" type="radio" name="button-style" value="is-round-edges-button">
+          </label>
+          <label>
+            Increased Length
+            <input id="buttonstyle3" type="radio" name="button-style" value="is-increase-length-button">
+          </label>
+          <label>
+            Large Button
+            <input id="buttonstyle4" type="radio" name="button-style" value="is-large-button">
+          </label>
+          <label>
+            Underlined
+            <input id="buttonstyle5" type="radio" name="button-style" value="is-underline-button">
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="color-set">
           <label>
             Red
-            <input id="red-design" name="button-color" type="radio" value="red">
+            <input id="red-design" name="button-color" type="radio" value="is-red" checked>
+          </label>
+          <label>
+            Orange
+            <input id="orange-design" name="button-color" type="radio" value="is-orange">
+          </label>
+          <label>
+            Yellow
+            <input id="yellow-design" name="button-color" type="radio" value="is-yellow">
+          </label>
+          <label>
+            Green
+            <input id="green-design" name="button-color" type="radio" value="is-green">
           </label>
           <label>
             Blue
-            <input id="blue-design" name="button-color" type="radio" value="blue">
+            <input id="blue-design" name="button-color" type="radio" value="is-blue">
           </label>
         </fieldset>
-        <a id="preview" href="#">Preview</a>
       </form>
-      <div id="output-visual"></div>
-      <output id="output-html" ></output>
-      <output id="output-css" ></output>
     </section>
+  <div id="html-code">
+    <label id="html-code">
+      HTML Code
+      <textarea id="output-html" cols="40" rows="20"></textarea>
+    </label>
+  </div>
+
+
+    <div id="output-visual"></div>
     <script src="gen.js"></script>
   </body>
 </html>
+
+<!--    <label id="css-code">
+      CSS Code
+      <textarea id="output-css" cols="40" rows="20"></textarea>
+    </label> -->

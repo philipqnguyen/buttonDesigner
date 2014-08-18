@@ -1,0 +1,27 @@
+#Button-info{
+  width: 510px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#generator-button{ /* takes you to the generator page*/
+  margin-right: auto;
+  margin-left: auto;
+  width: 510px;
+  height: 320px;
+  background-color: #48D1CC;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px #888888;
+  margin-top: -700px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  }
+
+#register-free{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  color: #008B8B;
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+s
